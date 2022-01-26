@@ -8,8 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt-mt7621
-
+name: Build OpenWrt
 on:
   repository_dispatch:
   workflow_dispatch:
