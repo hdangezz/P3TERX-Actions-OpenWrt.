@@ -8,15 +8,16 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build OpenWrt_x86
+name: Build OpenWrt
+
 on:
   repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
         description: 'SSH connection to Actions'
-        required: true
-        default: 'true'
+        required: false
+        default: 'false'
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
